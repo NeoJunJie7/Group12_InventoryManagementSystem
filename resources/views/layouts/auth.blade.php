@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>{{ config('app.name') }}</title>
+    <title>Southern Inventory Management System</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     <!-- CSS files -->
     <link href="{{ asset('dist/css/tabler.min.css') }}" rel="stylesheet"/>
@@ -27,7 +27,7 @@
         <div class="container container-tight py-4">
             <div class="text-center mb-4">
                 <a href="{{ url('/') }}" class="navbar-brand navbar-brand-autodark">
-                    <img src="{{ asset('static/logo.svg') }}" width="110" height="32" alt="Tabler" class="navbar-brand-image">
+                    <img src="{{ asset('static/SUC_logo.png') }}" width="110" height="32" alt="" class="navbar-brand-image">Southern Inventory Management System
                 </a>
             </div>
 

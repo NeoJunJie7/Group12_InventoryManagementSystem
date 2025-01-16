@@ -28,11 +28,6 @@ class DashboardController extends Controller
 
         $categories = Category::count();
 
-        $quotations = Quotation::count();
-        $todayQuotations = Quotation::query()
-            ->where('date', today()->format('Y-m-d'))
-            ->get()
-            ->count();
 
         return view('dashboard', [
             'products' => $products,
@@ -40,9 +35,7 @@ class DashboardController extends Controller
             'completedOrders' => $completedOrders,
             'purchases' => $purchases,
             'todayPurchases' => $todayPurchases,
-            'categories' => $categories,
-            'quotations' => $quotations,
-            'todayQuotations' => $todayQuotations,
+            'categories' => $categories
         ]);
     }
 }
